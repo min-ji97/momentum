@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY MOMENTUM</title>
+    
+    <link rel="stylesheet" href="css/css/main.min.css">
+    <link rel="stylesheet" href="css/css/header.min.css"> 
+    <link rel="stylesheet" href="css/css/calendar.min.css">
+    <link rel="stylesheet" href="css/css/todo.min.css">
+    <link rel="stylesheet" href="css/css/weather.min.css"> 
+    <link rel="stylesheet" href="css/css/quote.min.css"> 
+    <link rel="stylesheet" href="css/css/bookMark.min.css"> 
+    
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+
+    <script defer src="js/login.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/calendar.js"></script>
+
+</head>
+<body>
+   
+    <div class="main-container flex-col">
+        <div id="today">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <h1 id="clock">00 : 00</h1>
+        </div>
+        <div class="flex-row">
+            <div class="width--20">
+                <div id="calendar">
+                    <div id="calendar-header">
+                        <button class="preBtn"> < </button>
+                        <span></span>
+                        <button class="nextBtn"> > </button>
+                    </div>
+                    <div class="flex-row--end">
+                        <button id="initDayBtn">TODAY</button>
+                    </div>
+                    
+                    <div id="calendar-table"></div>
+                </div>
+                <div id="weather" class="flex-col">
+                    <span id="city"></span>
+                    <div>
+                        <span id="weather-icon">
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span id="temperature"></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="todo" class="width--50">
+                <form id="todo-form">
+                    <input type="text" required placeholder="입력해주세요">
+                </form>
+                <ul id="todo-list"></ul>
+            </div>  
+            
+            <div id="bookMark">
+                <button><a href="https://www.tistory.com/" target="_blank">Tistory</a></button>
+                <button><a href="https://www.naver.com/" target="_blank">Naver</a></button>
+                <button><a href="https://www.youtube.com/" target="_blank">Youtube</a></button>
+            </div>
+        </div>
+    </div>
+    
+
+  
+</body>
+</html>

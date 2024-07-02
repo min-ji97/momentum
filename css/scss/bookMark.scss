@@ -1,0 +1,40 @@
+
+#bookMark{
+    button{
+        font-size: 30px;
+        border-radius: 28px;
+        list-style: none;
+        height: 58px;
+        background-color: powderblue;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+}
+
+
+
+
+
+/* 아래 주석은 몽땅 지울 것! */
+    // display: flex;
+    // flex-direction: column;
+    // table{
+    //     margin: 70px 0px;
+    //     font-size: 25px;
+    //     text-align: center;
+    //     border-spacing : 70px 13px;
+    // }
+
+    // div{
+    //     margin: 70px 30px;
+    //     font-size: 28px;
+    // }
+    // button{
+    //     width: 300px;
+    //     font-size: 28px;
+    //     margin: 10px;
+    //     color: black;
+    // }

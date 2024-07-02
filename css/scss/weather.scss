@@ -1,0 +1,24 @@
+
+#weather{
+    justify-content: center;
+
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    background: whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    #city{
+        font-size: 23px;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+    }
+    img{
+        width: 100px;
+        margin: auto;
+    }
+    
+}

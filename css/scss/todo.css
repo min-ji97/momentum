@@ -1,0 +1,55 @@
+#todo {
+  margin-left: 15px;
+}
+
+#todo-form input {
+  padding: 4px 25px;
+  font-size: 16px;
+  border: 1.5px solid #615353;
+  border-radius: 30px;
+  width: 25vw;
+  height: 31px;
+}
+
+#todo-list {
+  padding: 11px 27px;
+  border-radius: 25px;
+  border: 1px solid whitesmoke;
+  background: whitesmoke;
+  max-height: 656px;
+  overflow: auto;
+}
+#todo-list ::-webkit-scrollbar {
+  width: 12px;
+}
+#todo-list ::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(84, 100, 173, 0.7803921569);
+  border-radius: 20px;
+  background-color: rgba(171, 186, 255, 0.7803921569);
+}
+#todo-list ::-webkit-scrollbar-track {
+  background-color: #f1f7fb;
+  border-radius: 20px;
+}
+#todo-list button {
+  margin: 0px 10px;
+}
+#todo-list li {
+  margin: 5px 0px;
+  list-style: none;
+}
+
+#todo-list::-webkit-scrollbar {
+  width: 12px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(84, 100, 173, 0.7803921569);
+  border-radius: 20px;
+  background-color: rgba(171, 186, 255, 0.7803921569);
+}
+
+#todo-list::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 20px;
+}

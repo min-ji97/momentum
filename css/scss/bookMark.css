@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#bookMark button {
+  font-size: 30px;
+  border-radius: 28px;
+  list-style: none;
+  height: 58px;
+  background-color: powderblue;
+}
+#bookMark button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 아래 주석은 몽땅 지울 것! */

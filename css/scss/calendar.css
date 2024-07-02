@@ -1,0 +1,42 @@
+.active {
+  color: white;
+  /* border: 1px solid #000; */
+  border-radius: 20%;
+  background-color: aqua;
+}
+
+.sunday-color {
+  color: red;
+}
+
+.saturday-color {
+  color: blue;
+}
+
+#calendar {
+  margin: 20px;
+}
+#calendar #calendar-header {
+  text-align: center;
+  margin: 10px 0;
+}
+#calendar #calendar-header span {
+  font-size: 23px;
+}
+#calendar #initDayBtn {
+  justify-content: flex-end;
+  margin: 15px 0px;
+}
+#calendar #calendar-table {
+  padding: 10px 0px;
+  background-color: whitesmoke;
+  border-radius: 24px;
+}
+#calendar #calendar-table table {
+  width: 80%;
+  margin: auto;
+}
+#calendar #calendar-table table td {
+  font-size: 20px;
+  text-align: center;
+}

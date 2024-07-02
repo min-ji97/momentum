@@ -1,0 +1,57 @@
+// @import "calendar";
+// @import "todo";
+// @import "weather";
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-row--end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.width--20{
+    width: 20%;
+}
+.width--30{
+    width: 30%;
+}
+.width--40{
+    width: 40%;
+}
+.width--50{
+    width: 50%;
+}
+.width--100{
+    width: 100%;
+}
+ 
+/* 
+#calendar{
+    margin: 20px;
+    background-color: aquamarine;
+ } */
+
+ /********************* Todo List css  *********************/
