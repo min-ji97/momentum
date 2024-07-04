@@ -26,54 +26,75 @@
 </head>
 <body>
    
-    <div class="main-container flex-col">
-        <div id="today">
-            <div>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <h1 id="clock">00 : 00</h1>
-        </div>
-        <div class="flex-row">
-            <div class="width--20">
-                <div id="calendar">
-                    <div id="calendar-header">
-                        <button class="preBtn"> < </button>
+    <div class="container flex-col">
+
+        <div class="container-top flex-row">
+
+            <!-- 날씨 -->
+            <div id="weather" class="flex-row">
+                <span id="city"></span>
+                <div class="flex-row">
+                    <span id="weather-icon">
                         <span></span>
-                        <button class="nextBtn"> > </button>
-                    </div>
-                    <div class="flex-row--end">
-                        <button id="initDayBtn">TODAY</button>
-                    </div>
-                    
-                    <div id="calendar-table"></div>
+                        <span></span>
+                    </span>
+                    <span id="temperature"></span>
                 </div>
-                <div id="weather" class="flex-col">
-                    <span id="city"></span>
-                    <div>
-                        <span id="weather-icon">
-                            <span></span>
-                            <span></span>
-                        </span>
-                        <span id="temperature"></span>
-                    </div>
+            </div>
+            <!-- 날짜/시간 -->
+            <div id="today">
+                <div>
+                    <span></span>
+                    <span></span>
                 </div>
                 
+                <h1 id="clock">00 : 00</h1>
             </div>
-            <div id="todo" class="width--50">
-                <form id="todo-form">
-                    <input type="text" required placeholder="입력해주세요">
-                </form>
-                <ul id="todo-list"></ul>
-            </div>  
+    
             
-            <div id="bookMark">
-                <button><a href="https://www.tistory.com/" target="_blank">Tistory</a></button>
-                <button><a href="https://www.naver.com/" target="_blank">Naver</a></button>
-                <button><a href="https://www.youtube.com/" target="_blank">Youtube</a></button>
-            </div>
+        
         </div>
+
+        
+
+        <div class="container-main" >
+            <div class="flex-row">
+                <div class="width--20">
+                    <div id="calendar">
+                        <div id="calendar-header">
+                            <button class="preBtn"> < </button>
+                            <span></span>
+                            <button class="nextBtn"> > </button>
+                        </div>
+                        <div class="flex-row--end">
+                            <button id="initDayBtn">TODAY</button>
+                        </div>
+                        
+                        <div id="calendar-table"></div>
+                    </div>
+                </div>
+    
+                <div id="bookMark">
+                   
+                    <button><a href="https://www.naver.com/" target="_blank">Naver</a></button>
+                    <button><a href="https://www.youtube.com/" target="_blank">Youtube</a></button>
+                    <button><a href="https://www.tistory.com/" target="_blank">Tistory</a></button>
+                </div>
+    
+                <div id="todo" class="">
+                    <ul id="todo-list"></ul>
+                    <form id="todo-form">
+                        <input type="text" required placeholder="입력해주세요">
+                    </form>
+                    
+                </div>  
+            </div>
+
+            
+            
+        </div>
+
+
     </div>
     
 

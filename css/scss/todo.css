@@ -16,7 +16,8 @@
   border-radius: 25px;
   border: 1px solid whitesmoke;
   background: whitesmoke;
-  max-height: 656px;
+  width: 25vw;
+  height: 505px;
   overflow: auto;
 }
 #todo-list ::-webkit-scrollbar {

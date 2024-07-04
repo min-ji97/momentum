@@ -1,20 +1,31 @@
 
 #weather{
-    justify-content: center;
 
+    position: absolute;
+    left: 255px;
+    top: 15px;
+    // 15px
+
+    justify-content: center;
     border: 1px solid whitesmoke;
     border-radius: 25px;
-    background: whitesmoke;
-    margin: 20px;
-    padding: 20px;
+    // background: whitesmoke;
+    // margin: 20px;
+    // padding: 20px;
+    align-items: end;
+    div{
+        align-items: end;
+    }
     #city{
         font-size: 23px;
     }
     span{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         font-size: 20px;
+        align-items: end;
+        padding: 0px 10px;
     }
     img{
         width: 100px;
