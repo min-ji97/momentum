@@ -9,7 +9,7 @@
     justify-content: center;
     border: 1px solid whitesmoke;
     border-radius: 25px;
-    // background: whitesmoke;
+    background: rgb(255, 255, 255);
     // margin: 20px;
     // padding: 20px;
     align-items: end;
@@ -32,4 +32,56 @@
         margin: auto;
     }
     
+}
+
+
+
+// 날씨별 아이콘
+
+.clear-icon{
+    background:url(../../img/weather_icon/sunny.png)  no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    // background-color: rgb(255, 227, 227);
+}
+.clouds-icon{
+    background:url(../../img/weather_icon/clouds.png) no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    // background-color: rgb(255, 227, 227);
+}
+.thunderstrom-icon{
+    background:url(../../img/weather_icon/storm.png)  no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    // background-color: rgb(255, 227, 227);
+}
+.rain-icon{
+    background:url(../../img/weather_icon/rain.png)  no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    // background-color: rgb(255, 227, 227);
+}
+.snow-icon{
+    background:url(../../img/weather_icon/snow.png)  no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    // background-color: rgb(255, 227, 227);
+}
+.mist-icon{
+    background:url(../../img/weather_icon/mist.png)  no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    // background-color: rgb(255, 227, 227);
+}
+
+.idontknow-icon{
+    background-color: red;
+    // 이게 뜬다면.... 내가 못넣은 날씨가 더 있으려나...! 찾아볼껏..!
 }

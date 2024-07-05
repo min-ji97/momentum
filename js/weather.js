@@ -24,9 +24,11 @@ function success(pos){
 
         console.log('온도가 잘 반올림 하는가 -> ', Math.ceil(temp*10)/10);
         
+
+       
         const citySpan = document.querySelector("#city");
-        const iconSpanFirst = document.querySelector("#weather-icon :first-child"); // 이건 css니까... iconSpan.firstChild가 안먹나바 -> getElementById 이건CSS 아니라서 가능할듯함 정리 필요.......ㅠㅡㅠㅡㅠ
-        const iconSpanLast = document.querySelector("#weather-icon :last-child"); 
+        const iconSpanFirst = document.querySelector("#weather-icon"); // 이건 css니까... iconSpan.firstChild가 안먹나바 -> getElementById 이건CSS 아니라서 가능할듯함 정리 필요.......ㅠㅡㅠㅡㅠ
+        const iconSpanLast = document.querySelector("#weather-icon-text"); 
         const tempSpan = document.querySelector("#temperature");
 
         citySpan.innerHTML = city;
@@ -44,7 +46,47 @@ function success(pos){
         // iconSpanFirst.innerHTML = weather;  // 날씨 이미지로 보여주기
         iconSpanLast.innerHTML = weather; // 날씨 영어로
         
-        
+
+        const myWeatherIcon = document.querySelector("#hwhwhw");
+        const backgroundImage = document.querySelector("body");
+     
+        if(weather === 'Clear' ){
+            backgroundImage.classList.add('background-clear');
+            myWeatherIcon.classList.add('clear-icon');
+
+        }else if(weather === 'Clouds'){
+            backgroundImage.classList.add('background-clouds');
+            myWeatherIcon.classList.add('clouds-icon');
+
+        }else if(weather === 'Thunderstorm'){
+            backgroundImage.classList.add('.background-thunderstrom');
+            myWeatherIcon.classList.add('thunderstrom-icon');
+            
+        }else if(weather === 'Drizzle'){
+            backgroundImage.classList.add('.background-rain');
+            myWeatherIcon.classList.add('rain-icon');
+
+        }else if( weather === 'Rain'){
+            backgroundImage.classList.add('.background-rain');
+            myWeatherIcon.classList.add('rain-icon');
+
+        }else if( weather === 'Snow'){
+            backgroundImage.classList.add('.background-snow');
+            myWeatherIcon.classList.add('snow-icon');
+
+        }else if( weather === 'Mist'){
+            backgroundImage.classList.add('.background-mist');
+            myWeatherIcon.classList.add('mist-icon');
+
+        }else if( weather === 'Atomosphere'){
+            backgroundImage.classList.add('.background-mist');
+            myWeatherIcon.classList.add('mist-icon');
+
+        }else{
+// default 
+            backgroundImage.classList.add('.background-default');
+            myWeatherIcon.classList.add('idontknow-icon');
+        }
         
     })
 }
