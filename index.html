@@ -26,22 +26,24 @@
 </head>
 <body>
    
-    <div class="container flex-col">
+    <div class="container flex-col" >
 
         <div class="container-top flex-row">
 
             <!-- 날씨 -->
             <div id="weather" class="flex-row">
-                <span id="hwhwhw"></span>
-                <span id="city"></span>
-
-                <div class="flex-row">
-                    <span id="weather-icon"></span>
-                    <span id="weather-icon-text"></span>
-                    <span id="temperature"></span>
+                <div>
+                    <span id="my-weather-icon"></span>
                 </div>
-
                 
+                <span id="city"></span>
+            
+                <!-- <span id="weather-icon"></span> -->
+                <span id="weather-icon-text"></span>
+                <span id="temperature"></span>
+        
+
+
             </div>
             <!-- 날짜/시간 -->
             <div id="today">
@@ -76,12 +78,25 @@
                     </div>
                 </div>
     
-                <div id="bookMark">
+                <div class="flex-col">
+                    <div id="bookMark">
                    
-                    <button class="bookmark-naver"><a href="https://www.naver.com/" target="_blank"></a></button>
-                    <button class="bookmark-youtube"><a href="https://www.youtube.com/" target="_blank"></a></button>
-                    <button class="bookmark-blog"><a href="https://www.tistory.com/" target="_blank"></a></button>
+                        <button class="bookmark-naver"><a href="https://www.naver.com/" target="_blank"></a></button>
+                        <button class="bookmark-youtube"><a href="https://www.youtube.com/" target="_blank"></a></button>
+                        <button class="bookmark-blog"><a href="https://www.tistory.com/" target="_blank"></a></button>
+                        <button class="bookmark-naver"><a href="https://www.naver.com/" target="_blank"></a></button>
+                        <button class="bookmark-youtube"><a href="https://www.youtube.com/" target="_blank"></a></button>
+                        <button class="bookmark-blog"><a href="https://www.tistory.com/" target="_blank"></a></button>
+                    </div>
+
+                    <div class=".search">
+                        
+                        <div class="input-label">Google</div>
+                        <input type="text" placeholder="Google 검색 및 URL 입력">
+
+                    </div>
                 </div>
+                
     
                 <div id="todo" class="">
                     <ul id="todo-list"></ul>

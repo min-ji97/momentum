@@ -27,8 +27,9 @@ function success(pos){
 
        
         const citySpan = document.querySelector("#city");
-        const iconSpanFirst = document.querySelector("#weather-icon"); // 이건 css니까... iconSpan.firstChild가 안먹나바 -> getElementById 이건CSS 아니라서 가능할듯함 정리 필요.......ㅠㅡㅠㅡㅠ
-        const iconSpanLast = document.querySelector("#weather-icon-text"); 
+        // weather api에서 제공하는 이미지 받아올 태크
+        //const iconSpanWeather = document.querySelector("#weather-icon"); // 이건 css니까... iconSpan.firstChild가 안먹나바 -> getElementById 이건CSS 아니라서 가능할듯함 정리 필요.......ㅠㅡㅠㅡㅠ
+        const iconSpanWeatherText = document.querySelector("#weather-icon-text"); 
         const tempSpan = document.querySelector("#temperature");
 
         citySpan.innerHTML = city;
@@ -38,16 +39,18 @@ function success(pos){
         const iconUrl = `https://openweathermap.org/img/wn/${weatherIcon}.png`;
         console.log(iconUrl);
 
+        /* weather api 에서 제공하는 이미지를 받아옴. 다른 이미지를 사용해서 안쓰는데 일단 주석처리!
         const imgTag = document.createElement("img");
         imgTag.setAttribute('src',`https://openweathermap.org/img/wn/${weatherIcon}.png`);
+        iconSpanWeather.appendChild(imgTag);
+        */
 
-        iconSpanFirst.appendChild(imgTag);
 
         // iconSpanFirst.innerHTML = weather;  // 날씨 이미지로 보여주기
-        iconSpanLast.innerHTML = weather; // 날씨 영어로
+        iconSpanWeatherText.innerHTML = weather; // 날씨 영어로
         
 
-        const myWeatherIcon = document.querySelector("#hwhwhw");
+        const myWeatherIcon = document.querySelector("#my-weather-icon");
         const backgroundImage = document.querySelector("body");
      
         if(weather === 'Clear' ){
