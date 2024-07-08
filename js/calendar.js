@@ -1,6 +1,6 @@
 
 
-const weekdays = ["일","월", "화", "수", "목", "금", "토"];
+const weekdays = ["SUN","MO", "TU", "WE", "TH", "FR", "SAT"];
 //   0   1     2     3     4     5     6
 
 const today = new Date();
@@ -24,9 +24,13 @@ function getCalendar(){
     let getFirstDay = firstDay.getDay();
     let getLastDay = lastDay.getDate();
 
-    let tableHeader = document.querySelector("#calendar-header span");
-    tableHeader.innerHTML = `${year}년 ${month+1}월`;
+    let tableHeaderYear = document.querySelector("#calendar-header span:nth-of-type(1)");
+    let tableHeaderMonth = document.querySelector("#calendar-header span:nth-of-type(2)");
+ 
+    // let tableHeader = dd ;
+    tableHeaderYear.innerHTML = `${year}`;
 
+    tableHeaderMonth.innerHTML = `${month+1}`;
 
     // table 만들기!!!!
 
@@ -110,6 +114,8 @@ function getCalendar(){
                 if(today.getDate() === Number(todayText)){ // 오늘 날짜에 해당하는 td구하기
                     const date =  rowList[i].cells[j];
                     date.className = 'active';
+                    date.setAttribute('data-day',todayText);
+                    
                 }
             }      
         }

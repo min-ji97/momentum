@@ -1,6 +1,9 @@
 const clock = document.querySelector("#clock");
-const todayDate = document.querySelector("#today span:first-child");
-const todayDay = document.querySelector("#today span:nth-child(2)");
+// const todayDate = document.querySelector("#today span:first-child");
+// const todayDay = document.querySelector("#today span:nth-child(2)");
+
+const todayDate = document.querySelector("#today-date");
+const todayDay = document.querySelector("#tody-day");
 
 const weekday = new Array(7);
 weekday[0] = '일'; //1
