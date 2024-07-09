@@ -1,6 +1,7 @@
 
 #bookMark{
-    
+    display: flex;
+    justify-content: center;
     button{
 
         width: 70px;
@@ -8,7 +9,7 @@
         border: 1.8px solid #e9e8e8;
         border-radius: 12px;
         background-color: transparent;
-
+        margin: 0px 4px;
 
         a{
             text-decoration: none;
@@ -34,10 +35,21 @@
     .bookmark-blog a{
         background: url(../../img/letter-t.png) no-repeat;
     }
+    .bookmark-instagram a{
+        background: url(../../img/instagram.png) no-repeat;
+    }
+    .bookmark-twitter a{
+        background: url(../../img/twitter.png) no-repeat;
+    }
+    .bookmark-twitter a{
+        background: url(../../img/twitter.png) no-repeat;
+    }
 
     .bookmark-naver a,
     .bookmark-youtube a,
-    .bookmark-blog a{
+    .bookmark-blog a,
+    .bookmark-instagram a,
+    .bookmark-twitter a{
         background-size: 50px;
     }
 }

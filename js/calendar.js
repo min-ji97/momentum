@@ -27,10 +27,22 @@ function getCalendar(){
     let tableHeaderYear = document.querySelector("#calendar-header span:nth-of-type(1)");
     let tableHeaderMonth = document.querySelector("#calendar-header span:nth-of-type(2)");
  
-    // let tableHeader = dd ;
-    tableHeaderYear.innerHTML = `${year}`;
+  
 
-    tableHeaderMonth.innerHTML = `${month+1}`;
+    let engTextMonth = ["January","February","March","April","May","June","July","August","September","Octobar","November","December"];
+
+    engTextMonth.forEach(( v , i)=>{
+        if(month === i){
+            changeText = v;
+        }
+    });
+
+      // 달력 년도와 월 알려주기
+      tableHeaderYear.innerHTML = year;
+      tableHeaderMonth.innerHTML = changeText;
+
+
+
 
     // table 만들기!!!!
 

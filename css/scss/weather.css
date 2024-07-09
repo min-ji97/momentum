@@ -1,11 +1,9 @@
 #weather {
-  position: absolute;
-  left: 255px;
-  top: 21px;
   justify-content: center;
   border-radius: 25px;
   align-items: end;
   font-size: 20px;
+  margin: 14px;
 }
 #weather span {
   padding: 0px 10px;

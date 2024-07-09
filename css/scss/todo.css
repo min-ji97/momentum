@@ -76,7 +76,7 @@
 #todo-list::-webkit-scrollbar-thumb {
   border: 1px solid rgba(84, 100, 173, 0.7803921569);
   border-radius: 20px;
-  background-color: rgba(171, 186, 255, 0.7803921569);
+  background-color: rgba(124, 126, 129, 0.6862745098);
 }
 
 #todo-list::-webkit-scrollbar-track {

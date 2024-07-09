@@ -75,8 +75,6 @@ function changeChecked(value) {
 
  
 function pointText(e) {
-
-    console.log('강조 버튼을 클릭하였습니다 ', e.target);
     const tag = e.target;
     if(!tag.classList.contains('checked') ){
         if(tag.classList.contains('strongText')){
@@ -91,12 +89,9 @@ function pointText(e) {
 
 function deleteList(e){
 
-    console.log('삭제버튼을 클릭해씀',e.target.parentNode);
-    // console.log(Lists[0].id);
     const targetNode = e.target.parentNode;
     targetNode.remove();
     Lists = Lists.filter(v => v.id !== Number(e.target.parentNode.id));
-    console.log(Lists);
     localStorage.setItem(TODOLIST,JSON.stringify(Lists));
     //obj 삭제하기                         
 
@@ -135,8 +130,6 @@ function InputSubmit(e){
 todoForm.addEventListener('submit', InputSubmit);
 
 
-
-console.log(localStorage.getItem(TODOLIST));
 // console.log( JSON.stringify(Lists));
 
 

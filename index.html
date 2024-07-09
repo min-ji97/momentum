@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="css/css/weather.min.css"> 
     <link rel="stylesheet" href="css/css/quote.min.css"> 
     <link rel="stylesheet" href="css/css/bookMark.min.css"> 
+    <link rel="stylesheet" href="css/css/youtube.min.css">
+    <link rel="stylesheet" href="css/css/search.min.css"> 
     
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
 
     <script defer src="js/login.js"></script>
@@ -22,6 +26,8 @@
     <script defer src="js/todo.js"></script>
     <script defer src="js/weather.js"></script>
     <script defer src="js/calendar.js"></script>
+    <script defer src="js/youtubeIframe.js"></script>
+    <script defer src="js/search.js"></script>
 
 </head>
 <body>
@@ -41,41 +47,48 @@
                 <!-- <span id="weather-icon"></span> -->
                 <span id="weather-icon-text"></span>
                 <span id="temperature"></span>
-        
-
-
             </div>
+
             <!-- 날짜/시간 -->
             <div id="today">
-                <div>
-                    <span></span>
-                    <span></span>
-                </div>
+                <!-- <div>
+                    <span id="today-date"></span>
+                    <span id="tody-day"></span>
+                </div> -->
+                <span id="today-date"></span>
+                <span id="tody-day"></span>
                 
-                <h1 id="clock">00 : 00</h1>
             </div>
-    
-            
-        
+            <h1 id="clock">00 : 00</h1>
         </div>
 
         
-
         <div class="container-main" >
             <div class="flex-row">
-                <div class="width--20">
+                <div class="flex-col">
                     <div id="calendar">
                         <div id="calendar-header">
-                            <button class="preBtn"> < </button>
-                            <span></span>
-                            <button class="nextBtn"> > </button>
+                            <button class="preBtn"></button>
+                            <div class="flex-col">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button class="nextBtn"></button>
                         </div>
-                        <div class="flex-row--end">
-                            <button id="initDayBtn">TODAY</button>
+                        <div class="flex-center">
+                            <button id="initDayBtn"><i class="fi fi-br-home"></i></button>
                         </div>
+                        <hr/>
                         
                         <div id="calendar-table"></div>
                     </div>
+
+                    <div id="youtube">
+                        <div id="player">
+
+                        </div>
+                    </div>
+
                 </div>
     
                 <div class="flex-col">
@@ -85,15 +98,18 @@
                         <button class="bookmark-youtube"><a href="https://www.youtube.com/" target="_blank"></a></button>
                         <button class="bookmark-blog"><a href="https://www.tistory.com/" target="_blank"></a></button>
                         <button class="bookmark-naver"><a href="https://www.naver.com/" target="_blank"></a></button>
-                        <button class="bookmark-youtube"><a href="https://www.youtube.com/" target="_blank"></a></button>
-                        <button class="bookmark-blog"><a href="https://www.tistory.com/" target="_blank"></a></button>
+                        <button class="bookmark-twitter"><a href="https://www.youtube.com/" target="_blank"></a></button>
+                        <button class="bookmark-instagram"><a href="https://www.instagram.com/" target="_blank"></a></button>
                     </div>
 
-                    <div class=".search">
-                        
-                        <div class="input-label">Google</div>
-                        <input type="text" placeholder="Google 검색 및 URL 입력">
-
+                    <div id="search">
+                        <form action="">
+                            <div class="input-label"><i class="fi fi-brands-google"></i></div>
+                            <input type="text" placeholder="Google 검색 및 URL 입력">
+                            <button type="submit" class="inputBtn"><i class="fi fi-rr-search"></i></button>
+                        </form>
+                        <!-- https://www.google.com/search?q= 여기에 입력한거 넣으면 될듯! 머야 api필요없는데요..! ㅎ -->
+<!-- AIzaSyD4PHPPNAiKdDbJkIlJ-iNU3uZeP-9cX0g  검색 키!! -->
                     </div>
                 </div>
                 
@@ -110,9 +126,9 @@
             
             
         </div>
-        <div class="container-bottom">
+        <!-- <div class="container-bottom">
             <button>토글버튼</button>
-        </div>
+        </div> -->
 
 
     </div>

@@ -1,10 +1,15 @@
 @charset "UTF-8";
+#bookMark {
+  display: flex;
+  justify-content: center;
+}
 #bookMark button {
   width: 70px;
   height: 70px;
   border: 1.8px solid #e9e8e8;
   border-radius: 12px;
   background-color: transparent;
+  margin: 0px 4px;
 }
 #bookMark button a {
   text-decoration: none;
@@ -23,9 +28,20 @@
 #bookMark .bookmark-blog a {
   background: url(../../img/letter-t.png) no-repeat;
 }
+#bookMark .bookmark-instagram a {
+  background: url(../../img/instagram.png) no-repeat;
+}
+#bookMark .bookmark-twitter a {
+  background: url(../../img/twitter.png) no-repeat;
+}
+#bookMark .bookmark-twitter a {
+  background: url(../../img/twitter.png) no-repeat;
+}
 #bookMark .bookmark-naver a,
 #bookMark .bookmark-youtube a,
-#bookMark .bookmark-blog a {
+#bookMark .bookmark-blog a,
+#bookMark .bookmark-instagram a,
+#bookMark .bookmark-twitter a {
   background-size: 50px;
 }
 

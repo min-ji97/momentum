@@ -39,42 +39,58 @@
   justify-content: space-between;
   align-items: center;
 }
-#calendar #calendar-header .preBtn {
+#calendar #calendar-header .preBtn, #calendar #calendar-header .nextBtn {
   position: relative;
   border: none;
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 15px;
+  height: 15px;
   border-radius: 45px;
+  margin: 0px 20px;
 }
-#calendar #calendar-header .preBtn::after {
+#calendar #calendar-header .preBtn::after, #calendar #calendar-header .nextBtn::after {
   content: "";
   position: absolute;
   display: block;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
-  width: 15px;
-  height: 15px;
   top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%) rotate(50deg);
+  left: 50%;
+  border-bottom: 2px solid black;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
 }
+#calendar #calendar-header .preBtn::after {
+  border-left: 2px solid black;
+  transform: translate(-50%, -50%) rotate(50deg);
+}
+#calendar #calendar-header .nextBtn::after {
+  border-right: 2px solid black;
+  transform: translate(-50%, -50%) rotate(-50deg);
+}
 #calendar #calendar-header span {
-  margin: 0px 20px;
+  margin: 0px 5px;
 }
 #calendar #calendar-header span:nth-of-type(1) {
-  font-size: 16px;
+  font-size: 13px;
 }
 #calendar #calendar-header span:nth-of-type(2) {
-  font-size: 50px;
+  font-size: 25px;
 }
-#calendar #calendar-header .nextBtn {
-  width: 30px;
-  height: 30px;
+#calendar #calendar-header hr {
+  margin: 0px;
 }
 #calendar #initDayBtn {
-  margin: 2px 0px;
+  border: none;
+  background-color: transparent;
+  margin-top: 1px;
+}
+#calendar #initDayBtn i {
+  font-size: 18px;
+  cursor: pointer;
+}
+#calendar #initDayBtn i:hover {
+  color: white;
+  transition-duration: 0.3s;
 }
 #calendar #calendar-table {
   border-radius: 25px;
