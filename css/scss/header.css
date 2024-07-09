@@ -1,6 +1,7 @@
 #today {
   text-align: center;
   margin-top: 20px;
+  width: 27%;
   display: flex;
   justify-content: center;
 }
@@ -12,8 +13,10 @@
 }
 
 #clock {
+  width: 25%;
   font-size: 24px;
   display: flex;
+  justify-content: center;
   align-items: end;
   margin: 14px;
 }

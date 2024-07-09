@@ -59,6 +59,7 @@ body {
 .container-top {
   justify-content: space-around;
   position: relative;
+  justify-content: center;
 }
 
 .container-main {

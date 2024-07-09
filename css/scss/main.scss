@@ -60,6 +60,7 @@ body{
     padding: 70px 0px;
     width: 100%;
     height: 100%;
+   
     justify-content: center;
     
 }
@@ -67,6 +68,7 @@ body{
 .container-top{
     justify-content: space-around;
     position: relative;
+    justify-content: center;
     
 }
 .container-main{
@@ -112,9 +114,7 @@ body{
 
     body{
         background: url(../../img/background_image/배경1.jpg) no-repeat;
-        // background-position: center;
-    background-size: cover;
-
+        background-size: cover;
     }
 
 
