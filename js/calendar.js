@@ -135,12 +135,7 @@ function getCalendar(){
     
 }
 
-
-//https://codepen.io/juan-patrick/pen/GRJWZmP?editors=1010
-
 //math.ceil(첫 요일 위치+마지막날)/7
-
-
 
 const preBtn = document.querySelector(".preBtn");
 const nextBtn = document.querySelector(".nextBtn");
