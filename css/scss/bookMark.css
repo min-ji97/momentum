@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #bookMark {
   display: flex;
   justify-content: center;
@@ -71,5 +70,3 @@
 #bookMark .bookmark-netflix a i:hover {
   transition-duration: 0.5s;
 }
-
-/* 아래 주석은 몽땅 지울 것! */

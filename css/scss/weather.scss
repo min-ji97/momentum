@@ -1,26 +1,13 @@
 
 #weather{
 
-    // position: absolute;
-    // left: 255px;
-    // top: -12px;
     width: 22%;
     justify-content: center;
-    // border: 1px solid whitesmoke;
     border-radius: 25px;
-    // background: rgb(255, 255, 255);
     align-items: end;
-    // div{
-    //     align-items: end;
-    // }
     font-size: 20px;
     margin: 14px;
     span{
-    
-        // flex-direction: row;
-        // text-align: center;
-       
-        // align-items: end;
         padding: 0px 10px;
     }
     #city{
@@ -42,11 +29,6 @@
             margin: 0;
         }
     }
-    // img{
-    //     // font-size: 20px;
-    //     margin: auto;
-    // }
-    
 }
 
 

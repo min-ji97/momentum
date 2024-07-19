@@ -1,20 +1,15 @@
-// @import "calendar";
-// @import "todo";
-// @import "weather";
 
-
-
-body{
+html, body{
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
-
 
 .hidden{
     display: none;
 }
-
-
 
 .flex-col{
     display: flex;
@@ -55,12 +50,9 @@ body{
 // 
 
 .container{
-    // justify-content: center;
-    // background-color: tomato;
-    padding: 70px 0px;
+
     width: 100%;
     height: 100%;
-   
     justify-content: center;
     
 }
@@ -78,9 +70,6 @@ body{
     position: relative;
 
     .flex-row{
-        // width: 80%;
-        // border: 1px solid #9ffdf8;
-        // background-color: transparent;
         border-radius: 40px;
         padding: 30px;
         justify-content: space-around;
@@ -105,47 +94,37 @@ body{
 
 
 
-//  날씨에 따라 배경 자동으로 바꿔주기!
 
-.background-default{
-    background-color: tomato;
-    
+body{
+    background: url(../../img/background_image/배경1.jpg) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
 }
 
-    body{
-        background: url(../../img/background_image/배경1.jpg) no-repeat;
-        background-size: cover;
-    }
+    // //  날씨에 따라 배경 자동으로 바꿔주기 -> 변경할 사진 아직 못찾음..!
 
+    // .background-default{
+    //     background-color: tomato;
 
-    .background-clear{
-        background-color: #db74f5;
-    }
-    .background-clouds{
-        background-color: #35343d;
-    }
-    .background-thunderstrom{
-        background-color: #eff305;
-    }
-    .background-rain{
-        background-color: #1957ff;
-    }
-    .background-snow{
-        background-color: #ffffff;
-    }
-    .background-mist{
-        background-color: #99ff70;
-    }
+    // }
 
+    // .background-clear{
+    //     background-color: #db74f5;
+    // }
+    // .background-clouds{
+    //     background-color: #35343d;
+    // }
+    // .background-thunderstrom{
+    //     background-color: #eff305;
+    // }
+    // .background-rain{
+    //     background-color: #1957ff;
+    // }
+    // .background-snow{
+    //     background-color: #ffffff;
+    // }
+    // .background-mist{
+    //     background-color: #99ff70;
+    // }
 
-
-
-
-
-/* 
-#calendar{
-    margin: 20px;
-    background-color: aquamarine;
- } */
-
- /********************* Todo List css  *********************/
